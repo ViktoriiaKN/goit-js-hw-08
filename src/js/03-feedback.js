@@ -31,7 +31,7 @@ function onFormSubmit(event) {
     return alert(`Будь ласка, заповніть всі обов'язкові поля.`);
   }
 
-  localStorage.removeItem(STORAGE_KEY);
+  localStorage.clear(STORAGE_KEY);
   event.currentTarget.reset();
   dataForm = {};
 }
